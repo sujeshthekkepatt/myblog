@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "This is a simple blogging system for my persoonal Purposes. But feel free to fork and modify it :) .",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "date-and-time": "^0.4.0",
+    "express": "^4.15.2",
+    "formidable": "^1.1.1",
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.5",
+    "pug": "^2.0.0-beta.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "node",
+    "mongodb"
+  ],
+  "author": "Sujesh T",
+  "license": "MIT"
+}

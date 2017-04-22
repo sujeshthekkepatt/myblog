@@ -1,0 +1,73 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='../../favicon.ico')
+    title
+    // Bootstrap core CSS
+    link(href='../public/css/bootstrap.min.css', rel='stylesheet')
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    link(href='../public/css/ie10-viewport-bug-workaround.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='../public/css/blog.css', rel='stylesheet')
+    // Just for debugging purposes. Don't actually copy these 2 lines!
+    //if lt IE 9
+      script(src='../../assets/js/ie8-responsive-file-warning.js')
+    script(src='../public/js/ie-emulation-modes-warning.js')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    .blog-masthead
+      .container
+        nav.blog-nav
+          a.blog-nav-item.active(href='#') Home
+          a.blog-nav-item(href='#') New features
+          a.blog-nav-item(href='#') Press
+          a.blog-nav-item(href='#') New hires
+          a.blog-nav-item(href='#') About
+    .container
+      .blog-header
+        h1.blog-title The Bootstrap Blog
+        p.lead.blog-description The official example template of creating a blog with Bootstrap.
+      .row
+        .col-sm-8.blog-main
+          .blog-post
+            h2.blog-post-title Create A New Blog post
+            form.form-group(method='post', action='/post')
+              input#ptitle.form-control(type='text', name='ptitle', placeholder='Enter the Post title')
+              br
+              textarea#pcontent.form-control(name='pcontent', placeholder='Enter the Post Content')
+              br
+              input#pauthor.form-control(type='text', placeholder='Author Name', name='pauthor')
+              br
+              input.form-control(type='submit', name='spost', value='Publish Blog')
+          // /.blog-post
+        // /.blog-main
+      // /.row
+    // /.container
+    footer.blog-footer
+      p
+        | Blog template built for 
+        a(href='http://getbootstrap.com') Bootstrap
+        |  by 
+        a(href='https://twitter.com/mdo') @mdo
+        | .
+      p
+        a(href='#') Back to top
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="../public/js/vendor/jquery.min.js"><\\/script>')
+    script(src='../public/js/bootstrap.min.js')
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    script(src='../public/js/ie10-viewport-bug-workaround.js')
